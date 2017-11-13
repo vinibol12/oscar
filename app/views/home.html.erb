@@ -1,23 +1,59 @@
 <header>
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </header>
-<body>
-  <div class="top">
+<body class="container">
+  <div class="row top">
     <div class="layover">
-      <button>About</button>
-      <button>Personal Training</button>
-      <button>Blog</button>
-      <button>Contact</button>
+      <div class="buttons__wrapper">
+        <a href="#about">About</a>
+        <a href="#personal-training">Personal Training</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
       <div class="landing-moto__wrapper">
         <div class="landing-moto">
           KEEP YOUR BODY
           <br>
           FIT & STRONG
         </div>
-        <div class="landing-moto__subtitle">Oscar Junior</div>
+        <div class="landing-moto__subtitle">with Oscar Junior</div>
       </div>
     </div>
   </div>
+  <div class="row top" id="about">
+    <h1>About</h1>
+    <p>Some content About Oscar</p>
+  </div>
+  <div class="row top" id="personal-training">
+    <h1>Personal Training</h1>
+    <p>Some content About Personal Training</p>
+  </div>
+  <div class="row top" id="blog">
+    <h1>Blog</h1>
+    <p>Some content About Blog</p>
 
+  </div>
+  <div class="row contact" id="contact">
+    <h1>Contact</h1>
+    <form name="contact">
+      <label>Your name</label>
+      <input type="text">
+      <label>Your email</label>
+      <input type="email">
+      <label>Message</label>
+      <input type="text">
+    </form>
+  </div>
+
+<script>
+    $("body").find("a").click(function(e) {
+        e.preventDefault();
+        var section = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section).offset().top
+        });
+    });
+</script>
 </body>
 

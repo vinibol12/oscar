@@ -1,54 +1,97 @@
-.landing-moto__subtitle {
-    color: inherit;
-    font-family: inherit;
-    position: absolute;
-    font-size: 1.5em;
-    font-weight: 200;
-    z-index: 3;
-    bottom: 0
+* {
+  //border: 1px dotted black;
 }
+
+.row {
+  height: 80vh;
+}
+//.landing-moto__subtitle {
+//    color: inherit;
+//    font-family: inherit;
+//    position: absolute;
+//    font-size: 1.5em;
+//    font-weight: 200;
+//    z-index: 3;
+//    bottom: 0
+//}
+//
+//.section-one {
+//    position:absolute;
+//    z-index:0;
+//    left:0;
+//    top:0;
+//    background-repeat: no-repeat;
+//    background-position: center center;
+//    background-size: cover;
+//    height: 100vh;
+//    width: 100%;
+//
+//}
+//
+//.section-two {
+//    position:absolute;
+//    z-index:0;
+//    left:0;
+//    top:0;
+//    background-repeat: no-repeat;
+//    background-position: center center;
+//    background-size: cover;
+//    height: 100vh;
+//    width: 100%;
+//}
 
 .top {
-    position:absolute;
-    z-index:0;
-    left:0;
-    top:0;
-    background-image: asset-url("front_page_pic.jpeg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-
+  background-image: asset-url("front_page_pic.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .landing-moto {
-    font-size: 82px;
-    position: absolute;
-    z-index: 2;
-    overflow: visible;
-    font-style: normal;
-    text-align: center;
-    font-weight: 900;
+  font-size: 82px;
+  overflow: visible;
+  font-style: normal;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1;
 }
 
+.landing-moto__subtitle {
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.5em;
+  font-weight: 200;
+  bottom: 0;
+  text-align: center;
+}
+//
+//.buttons__wrapper {
+//    display: block;
+//}
+//
 .landing-moto__wrapper {
     color: #3a3636;
     font-family: rajdhani;
     justify-content: center;
-    top: 400px;
-    left: 65%;
     position: absolute;
-    width: 450px
-}
-.background {
-    background-size: cover;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
+    width: 450px;
 }
 
-.layover {
-    z-index: 2;
+.contact {
+  background-color: #3a3636;
 }
+//.background {
+//    background-size: cover;
+//    position: absolute;
+//    z-index: 1;
+//    width: 100%;
+//    height: auto;
+//    overflow-x: hidden;
+//}
+//
+//.layover {
+//    z-index: 2;
+//}
+//
+//.about {
+//    height: 30vh;
+//    width: 100%
+//}
